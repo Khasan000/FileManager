@@ -18,6 +18,27 @@ int main()
 	//file.MovingFile(); //+file +papka +papka c filom
 	/*file.Init();*/
 	//file.CalculatingSize();
+	file.CopyFile();
+	const int SIZE = 7;
+	string Functions[SIZE]{"","CreateFile","DeleteFile","RenameFile","MovingFile","Init"};
+
+
+	/*while (true)
+	{
+		int choise;
+		cout << "Choose func: ";
+		cin >> choise;
+
+		
+
+
+		switch (choise)
+		{
+
+		default:
+			break;
+		}
+	}*/
 	
 	
 }
