@@ -187,21 +187,24 @@ void FileManager::MovingFile()
 	else
 		cout << "Error" << endl;
 }
-void FileManager::CopyFile(string Start, string End)
+void FileManager::CopyFile()
 {
-	string chain;
-	FILE* archivo;
+	string LocalCorrectPath = GlobalCorrectedPath;
+	string FromFile, ToFile;
+	string StartPath = LocalCorrectPath, EndPath = LocalCorrectPath;
 
-	if (archivo = fopen(Start.c_str(), "r"))
-	{
-		chain = "copy " + Start + " " + End;
-		cerr << chain;
-		system(chain.c_str());
-	}
-	else
-	{
-		cout << "The file does not exist!" << endl;
-	}
+	cout << "Input FromFile: ";
+	cin >> FromFile;
+	cout << endl;
+
+	cout << "Input ToFile: ";
+	cin >> ToFile;
+	cout << endl;
+
+	StartPath.append(FromFile);
+	EndPath.append(ToFile);
+
+	Init(StartPath, EndPath);
 }
 void FileManager::CalculatingSize()
 {
@@ -224,23 +227,20 @@ void FileManager::CalculatingSize()
 
 	cout << "Size: " << FileSize << " bytes" << endl;
 }
-void FileManager::Init()
+void FileManager::Init(string Start, string End)
 {
-	string LocalCorrectPath = GlobalCorrectedPath;
-	string FromFile, ToFile;
-	string StartPath = LocalCorrectPath, EndPath = LocalCorrectPath;
+	tring chain;
+	FILE* archivo;
 
-	cout << "Input FromFile: ";
-	cin >> FromFile;
-	cout << endl;
-
-	cout << "Input ToFile: ";
-	cin >> ToFile;
-	cout << endl;
-
-	StartPath.append(FromFile);
-	EndPath.append(ToFile);
-
-	CopyFile(StartPath, EndPath);
+	if (archivo = fopen(Start.c_str(), "r"))
+	{
+		chain = "copy " + Start + " " + End;
+		cerr << chain;
+		system(chain.c_str());
+	}
+	else
+	{
+		cout << "The file does not exist!" << endl;
+	}
 
 }
