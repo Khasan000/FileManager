@@ -229,13 +229,12 @@ void FileManager::CalculatingSize()
 }
 void FileManager::Init(string Start, string End)
 {
-	tring chain;
+	string chain;
 	FILE* archivo;
 
 	if (archivo = fopen(Start.c_str(), "r"))
 	{
 		chain = "copy " + Start + " " + End;
-		cerr << chain;
 		system(chain.c_str());
 	}
 	else

@@ -18,7 +18,7 @@ int main()
 	//file.MovingFile(); //+file +papka +papka c filom
 	/*file.Init();*/
 	//file.CalculatingSize();
-	file.Init();
+	file.CopyFile();
 	const int SIZE = 7;
 	string Functions[SIZE]{"","CreateFile","DeleteFile","RenameFile","MovingFile","Init"};
 
