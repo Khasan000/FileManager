@@ -27,4 +27,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="TEST.xsd">
+      <Filter>Файлы ресурсов</Filter>
+    </Xsd>
+  </ItemGroup>
 </Project>
