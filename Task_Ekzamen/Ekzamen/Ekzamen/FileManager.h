@@ -7,6 +7,7 @@ class FileManager
 {
 private:
 	const string GlobalPath = "C:/Users/zkury/Desktop/Git_FileManager/Repos/Task_Ekzamen/Ekzamen/Ekzamen/Creations/";
+	const string GlobalCorrectedPath = "C:\\Users\\zkury\\Desktop\\Git_FileManager\\Repos\\Task_Ekzamen\\Ekzamen\\Ekzamen\\Creations\\";
 
 	static const int SIZE = 5;
 	const string Formats[SIZE]{ "",".txt",".png",".jpg",".cpp" };
@@ -23,7 +24,7 @@ public:
 	void RenameFile();
 	void MovingFile();
 
-	void Init(string Start, string End);
+	void Init();
 
 	void CalculatingSize();
 private:

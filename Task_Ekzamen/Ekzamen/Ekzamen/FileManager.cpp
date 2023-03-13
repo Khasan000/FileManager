@@ -224,11 +224,11 @@ void FileManager::CalculatingSize()
 
 	cout << "Size: " << FileSize << " bytes" << endl;
 }
-void FileManager::Init(string Start, string End)
+void FileManager::Init()
 {
-	const string LocalCorrectedPath = "C:\\Users\\zkury\\Desktop\\Task_Ekzamen\\Ekzamen\\Ekzamen\\Creations\\";
+	string LocalCorrectPath = GlobalCorrectedPath;
 	string FromFile, ToFile;
-	string StartPath = LocalCorrectedPath, EndPath = LocalCorrectedPath;
+	string StartPath = LocalCorrectPath, EndPath = LocalCorrectPath;
 
 	cout << "Input FromFile: ";
 	cin >> FromFile;
