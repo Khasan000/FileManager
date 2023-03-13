@@ -6,7 +6,7 @@ using namespace std;
 class FileManager
 {
 private:
-	const string GlobalPath = "C:/Users/zkury/Desktop/Task_Ekzamen/Ekzamen/Ekzamen/Creations/";
+	const string GlobalPath = "C:/Users/zkury/Desktop/Git_FileManager/Repos/Task_Ekzamen/Ekzamen/Ekzamen/Creations/";
 
 	static const int SIZE = 5;
 	const string Formats[SIZE]{ "",".txt",".png",".jpg",".cpp" };
@@ -23,7 +23,7 @@ public:
 	void RenameFile();
 	void MovingFile();
 
-	void Init();
+	void Init(string Start, string End);
 
 	void CalculatingSize();
 private:
