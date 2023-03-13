@@ -23,11 +23,11 @@ public:
 	void RenameFile();
 	void MovingFile();
 
-	void Init();
+	void Init(string Start, string End);
 
 	void CalculatingSize();
 private:
-	void CopyFile(string Start, string End);
+	void CopyFile();
 
 };
 
