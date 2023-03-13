@@ -26,10 +26,8 @@
     <ClInclude Include="FileManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Xsd Include="TEST.xsd">
-      <Filter>Файлы ресурсов</Filter>
-    </Xsd>
+    <ClInclude Include="da.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
