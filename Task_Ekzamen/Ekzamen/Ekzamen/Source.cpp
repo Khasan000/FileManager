@@ -59,7 +59,6 @@ int main()
 			break;
 		default:
 			cout << "Incorrect choise!" << endl;
-			abort;
 			break;
 		}
 
