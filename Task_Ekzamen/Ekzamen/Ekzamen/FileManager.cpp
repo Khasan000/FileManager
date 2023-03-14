@@ -36,7 +36,6 @@ void FileManager::CreateFile()
 			else
 			{
 				cout << "Error" << endl;
-				abort();
 			}
 
 
@@ -103,6 +102,7 @@ void FileManager::CreateFile()
 
 			//START CREATE FILE/DIR
 			fout.open(LocalPath);
+			fout.close();
 			//END CREATE FILE/DIR
 
 
@@ -114,7 +114,7 @@ void FileManager::CreateFile()
 		else
 		{
 			cout << "Incorrect number" << endl;
-			//abort();
+			
 		}
 		//END EXEPTION
 

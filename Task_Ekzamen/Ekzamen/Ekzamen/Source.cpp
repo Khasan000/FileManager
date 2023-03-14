@@ -14,7 +14,11 @@ int main()
 	const int SIZE = 7;
 	string Functions[SIZE]{"","CreateFile","DeleteFile","RenameFile","MovingFile","CopyFile","CalculatingSize"};
 
+	FileManager file;
+
 	
+	while (true)
+		file.CreateFile();
 
 	
 	
